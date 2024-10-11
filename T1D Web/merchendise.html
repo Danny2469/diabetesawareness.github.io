@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: steelblue;
+            color: white;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .nav-links {
+            flex-grow: 1;
+        }
+
+        .nav-links ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .nav-links ul li {
+            margin: 0 15px;
+        }
+
+        .nav-links ul li a {
+            padding: 10px 20px;
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: 700;
+        }
+
+        .nav-links ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        .text-box {
+            text-align: center;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-box h1 {
+            font-size: 36px;
+        }
+
+        .text-box p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .merchandise-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .product {
+            border: 1px solid steelblue;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            font-size: 20px;
+            color: steelblue;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .product button {
+            padding: 10px;
+            background-color: steelblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product button:hover {
+            background-color: darkblue;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px; /* Space above footer */
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+            display: flex; /* Use flexbox for layout */
+        }
+
+        .footer-links ul li {
+            margin-right: 20px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .email {
+            color: lightblue; /* Email color */
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .email a {
+            color: rgb(255, 255, 255); /* Email link color */
+            text-decoration: none; /* Remove underline from link */
+        }
+
+        .email a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="LOGO1.jpg" alt="Logo"> <!-- Replace with your logo path -->
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Discussion.html">Discussion</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="merchendise.html">Merchandise</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="Learn about diabetes.html">Learn about Type 1 Diabetes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="text-box">
+        <h1>Merchandise</h1>
+        <p>Check out our exclusive merchandise to support diabetes awareness!</p>
+    </div>
+
+    <div class="merchandise-section" id="merchandise-section">
+        <!-- Products will be dynamically inserted here -->
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Type 1 Diabetes Website</p>
+            <ul class="footer-links">
+                <li><a href="User agreement.html">User agreement</a></li>
+                <li><a href="privacy policy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="email">
+            <p>Email us at: <a href="mailto:diabetesweb0@gmail.com">diabetesweb0@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const apiUrl = "https://api.printify.com/v1/products.json"; // Printify API URL
+        const apiKey = "YOUR_API_KEY"; // Replace with your Printify API Key
+
+        async function fetchProducts() {
+            const response = await fetch(apiUrl, {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${apiKey}`,
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                displayProducts(data);
+            } else {
+                console.error('Failed to fetch products:', response.statusText);
+            }
+        }
+
+        function displayProducts(products) {
+            const merchandiseSection = document.getElementById('merchandise-section');
+            merchandiseSection.innerHTML = ''; // Clear existing content
+
+            products.data.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.className = 'product';
+                productDiv.innerHTML = `
+                    <img src="${product.images[0].src}" alt="${product.title}">
+                    <h3>${product.title}</h3>
+                    <p>Price: R${(product.variants[0].price / 100).toFixed(2)}</p>
+                    <button>Add to Cart</button>
+                `;
+                merchandiseSection.appendChild(productDiv);
+            });
+        }
+
+        fetchProducts(); // Fetch products when the page loads
+    </script>
+</body>
+
+</html>

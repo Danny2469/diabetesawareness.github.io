@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Type 1 Diabetes Awareness</title>
+    <style>
+        body {
+            background-image: url('diabetes-tech.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Slab', sans-serif;
+            color: #333; /* Default text color */
+            line-height: 1.6;
+        }
+
+        /* Header with logo and navigation */
+        .header {
+            display: flex;
+            align-items: center; /* Center vertically */
+            padding: 10px 20px; /* Padding around the header */
+            background-color: steelblue; /* Ribbon background */
+            color: white; /* Text color for header */
+        }
+
+        .logo {
+            width: 100px; /* Logo width */
+            height: 100px; /* Logo height */
+            border-radius: 50%; /* Circular shape */
+            overflow: hidden; /* Ensure image fits inside the circle */
+            margin-right: 20px; /* Space between logo and buttons */
+        }
+
+        .logo img {
+            width: 100%; /* Make image fill the circle */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .nav-links {
+            flex-grow: 1; /* Take remaining space */
+        }
+
+        .nav-links ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start; /* Align buttons to left */
+        }
+
+        .nav-links ul li {
+            margin: 0 15px; /* Space between buttons */
+        }
+
+        .nav-links ul li a {
+            padding: 10px 20px;
+            background-color: transparent; /* Transparent button background */
+            color: white; /* Text color */
+            text-decoration: none;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+            font-weight: 700; /* Bold text */
+        }
+
+        .nav-links ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+            transform: scale(1.05); /* Slightly enlarge button on hover */
+        }
+
+        .text-box {
+            text-align: center;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px; /* Limit width for better readability */
+            border-radius: 10px; /* Rounded corners for text box */
+        }
+
+        .highlight {
+            background-color: steelblue;
+            color: white; /* Change text color for highlight */
+        }
+
+        .text-box h1 {
+            font-size: 36px;
+        }
+
+        .text-box p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .text-box h2 {
+            font-size: 28px; /* Slightly smaller for hierarchy */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .footer-links ul li:last-child {
+            margin-right: 0;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .email {
+            color: lightblue; /* Email color */
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .email a {
+            color: rgb(255, 255, 255); /* Email link color */
+            text-decoration: none; /* Remove underline from link */
+        }
+
+        .email a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="LOGO1.jpg" alt="Logo"> <!-- Replace with your logo path -->
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Discussion.html">Discussion</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="merchendise.html">Merchendise</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="Learn about diabetes.html">Learn about Type 1 Diabetes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="text-box">
+        <h1><span class="highlight">Welcome to the Type 1 Diabetes Website</span></h1>
+        <p><span class="highlight">This website was created to help diabetics communicate and to share tips for newly diagnosed diabetics.</span></p>
+        <h2><span class="highlight">Who we are</span></h2>
+        <p><span class="highlight">We are a community dedicated to supporting individuals affected by Type 1 Diabetes through information sharing, discussions, and events.</span></p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Type 1 Diabetes Website</p>
+            <ul class="footer-links">
+                <li><a href="User agreement.html">User agreement</a></li>
+                <li><a href="privacy policy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <p class="email">Email us at: <a href="mailto:diabetesweb0@gmail.com">diabetesweb0@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>

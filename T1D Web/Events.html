@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: steelblue;
+            color: white;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .nav-links {
+            flex-grow: 1;
+        }
+
+        .nav-links ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .nav-links ul li {
+            margin: 0 15px;
+        }
+
+        .nav-links ul li a {
+            padding: 10px 20px;
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: 700;
+        }
+
+        .nav-links ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        .text-box {
+            text-align: center;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-box h1 {
+            font-size: 36px;
+        }
+
+        .text-box p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .event-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid steelblue;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-section h2 {
+            font-size: 28px;
+            color: steelblue;
+            margin-bottom: 15px;
+        }
+
+        .event {
+            margin-bottom: 20px;
+        }
+
+        .event h3 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px; /* Space above footer */
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+            display: flex; /* Use flexbox for layout */
+        }
+
+        .footer-links ul li {
+            margin-right: 20px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .email {
+            color: lightblue; /* Email color */
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .email a {
+            color: rgb(255, 255, 255); /* Email link color */
+            text-decoration: none; /* Remove underline from link */
+        }
+
+        .email a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        .form-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid steelblue;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section h2 {
+            font-size: 28px;
+            color: steelblue;
+            margin-bottom: 15px;
+        }
+
+        .form-section label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .form-section input,
+        .form-section textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .form-section button {
+            padding: 10px 15px;
+            background-color: steelblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-section button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="LOGO1.jpg" alt="Logo"> <!-- Replace with your logo path -->
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Discussion.html">Discussion</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="merchendise.html">Merchendise</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="Learn about diabetes.html">Learn about Type 1 Diabetes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="text-box">
+        <h1>Upcoming Events</h1>
+        <p>Join us for various events aimed at raising awareness about diabetes, sharing knowledge, and supporting individuals living with this condition.</p>
+    </div>
+
+    <div class="event-section">
+        <h2>Current Events</h2>
+        <div class="event">
+            <h3>Annual Diabetes Awareness Walk</h3>
+            <p><strong>Date:</strong> March 15, 2024</p>
+            <p><strong>Time:</strong> 9:00 AM - 12:00 PM</p>
+            <p><strong>Location:</strong> City Park, Main Street, Stellenbosch</p>
+            <p>Join us for a walk to raise awareness about diabetes and promote a healthy lifestyle.</p>
+        </div>
+
+        <div class="event">
+            <h3>Diabetes Management Workshop</h3>
+            <p><strong>Date:</strong> April 20, 2024</p>
+            <p><strong>Time:</strong> 2:00 PM - 5:00 PM</p>
+            <p><strong>Location:</strong> Community Center, 123 Health St., Stellenbosch</p>
+            <p>This workshop will cover essential topics related to managing diabetes effectively.</p>
+        </div>
+
+        <div class="event">
+            <h3>Support Group Meeting</h3>
+            <p><strong>Date:</strong> May 10, 2024</p>
+            <p><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
+            <p><strong>Location:</strong> Local Library, 456 Learning Ave., Stellenbosch</p>
+            <p>A safe space for individuals with diabetes to share experiences and support each other.</p>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h2>Submit Your Event</h2>
+        <form id="eventForm" onsubmit="submitEvent(event)">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" required>
+
+            <label for="eventDate">Date:</label>
+            <input type="date" id="eventDate" required>
+
+            <label for="eventTime">Time:</label>
+            <input type="time" id="eventTime" required>
+
+            <label for="eventLocation">Location:</label>
+            <input type="text" id="eventLocation" required>
+
+            <label for="eventDescription">Description:</label>
+            <textarea id="eventDescription" rows="4" required></textarea>
+
+            <button type="submit">Submit Event</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Type 1 Diabetes Website</p>
+            <ul class="footer-links">
+                <li><a href="User agreement.html">User agreement</a></li>
+                <li><a href="privacy policy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="email">
+            <p>Email us at: <a href="mailto:diabetesweb0@gmail.com">diabetesweb0@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function submitEvent(event) {
+            event.preventDefault();
+
+            const eventName = document.getElementById('eventName').value;
+            const eventDate = document.getElementById('eventDate').value;
+            const eventTime = document.getElementById('eventTime').value;
+            const eventLocation = document.getElementById('eventLocation').value;
+            const eventDescription = document.getElementById('eventDescription').value;
+
+            // Here you can send the event data to the server
+            console.log({
+                eventName,
+                eventDate,
+                eventTime,
+                eventLocation,
+                eventDescription
+            });
+
+            // Clear the form after submission
+            document.getElementById('eventForm').reset();
+            alert('Event submitted successfully!');
+        }
+    </script>
+</body>
+
+</html>
